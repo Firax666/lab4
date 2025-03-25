@@ -10,7 +10,6 @@
 </head>
 <body>
 
-<!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
     <div class="container">
         <a class="navbar-brand" href="#">AWTravel</a>
@@ -28,111 +27,121 @@
 </nav>
 
 
-<header class="hero-section text-center text-white">
-    <div class="container">
-        <h1 class="display-4 text-primary">Explore the World</h1>
-        <p class="lead text-secondary">Find your next adventure with us</p>
-    </div>
-</header>
-
-
-<section id="about" class="container my-5">
-    <div class="row">
-        <div class="col-md-3">
-            <img src="assets/travelling.jpg" class="img-fluid rounded" alt="Famous world monuments drawing">
+<main>
+    <header class="hero-section text-center">
+        <div class="container">
+            <h1 class="display-4">Explore the World</h1>
+            <p class="lead text-primary">Find your next adventure with us</p>
         </div>
-        <div class="col-md-9">
-            <h2>Why Travel With Us?</h2>
-            <p>We offer the best travel experiences with expert guides and unforgettable destinations.</p>
+    </header>
+
+
+    <section id="about" class="container my-5">
+        <div class="row">
+            <div class="col-md-3">
+                <img src="assets/travelling.jpg" class="img-fluid rounded" alt="Famous world monuments drawing">
+            </div>
+            <div class="col-md-9">
+                <h2>Why Travel With Us?</h2>
+                <p>We offer the best travel experiences with expert guides and unforgettable destinations.</p>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<section class="bg-light py-5 text-center">
-    <blockquote class="blockquote">
-        <p>"Are we there yet?"</p>
-        <footer class="blockquote-footer">Probably everyone, at some point of their life</footer>
-    </blockquote>
-</section>
+    <section class="bg-light py-5 text-center">
+        <blockquote class="blockquote">
+            <p>"Are we there yet?"</p>
+            <footer class="blockquote-footer">Probably everyone, at some point of their life</footer>
+        </blockquote>
+    </section>
 
-<section class="container my-5">
-    <h2 class="text-center">Meet Our Team</h2>
-    <div id="employeeCarousel" class="carousel slide w-50 mx-auto" data-bs-ride="carousel">
-        <div class="carousel-inner">
+    <section class="container my-5">
+        <h2 class="text-center">Meet Our Team</h2>
+        <div id="employeeCarousel" class="carousel slide w-50 mx-auto" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                
+                <div class="carousel-item active">
+                    <div class="card text-center">
+                        <img src="assets/employee1.jpg" class="card-img-top w-100" height="500" style="object-fit: cover;" alt="Employee 1 Photo">
+                        <div class="card-body">
+                            <h5 class="card-title">Jane Smith</h5>
+                            <p class="card-text">Travel Expert</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="card text-center">
+                        <img src="assets/employee2.jpg" class="card-img-top w-100" height="500" style="object-fit: cover;" alt="Employee 2 Photo">
+                        <div class="card-body">
+                            <h5 class="card-title">John Doe</h5>
+                            <p class="card-text">Tour Guide</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
             
-            <div class="carousel-item active">
-                <div class="card text-center">
-                    <img src="assets/employee1.jpg" class="card-img-top w-100" height="500" style="object-fit: cover;" alt="Employee 1 Photo">
-                    <div class="card-body">
-                        <h5 class="card-title">Jane Smith</h5>
-                        <p class="card-text">Travel Expert</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="carousel-item">
-                <div class="card text-center">
-                    <img src="assets/employee2.jpg" class="card-img-top w-100" height="500" style="object-fit: cover;" alt="Employee 2 Photo">
-                    <div class="card-body">
-                        <h5 class="card-title">John Doe</h5>
-                        <p class="card-text">Tour Guide</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#employeeCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#employeeCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
         
-        <button class="carousel-control-prev" type="button" data-bs-target="#employeeCarousel" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon"></span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#employeeCarousel" data-bs-slide="next">
-            <span class="carousel-control-next-icon"></span>
-        </button>
-    
-    </div>
-</section>
+        </div>
+    </section>
 
-<section id="faq" class="container my-5">
-    <h2 class="text-center">Frequently Asked Questions</h2>
-    <div class="accordion" id="faqAccordion">
-        <div class="accordion-item">
-            <h2 class="accordion-header">
-                <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#faq1">What destinations do you offer?</button>
-            </h2>
-            <div id="faq1" class="accordion-collapse collapse show">
-                <div class="accordion-body">We offer worldwide travel experiences.</div>
+    <section id="faq" class="container my-5">
+        <h2 class="text-center">Frequently Asked Questions</h2>
+        <div class="accordion" id="faqAccordion">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="true">What destinations do you offer?</button>
+                </h2>
+                <div id="faq1" class="accordion-collapse collapse show">
+                    <div class="accordion-body">We offer worldwide travel experiences.</div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#faq2" aria-expanded="false">Can I refund my trip?</button>
+                </h2>
+                <div id="faq2" class="accordion-collapse collapse">
+                    <div class="accordion-body">You can refund any of the trips you booked if you'll do it at least 10 days before start of trip.</div>
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<section class="container my-5">
-    <h2 class="text-center">Popular Travel Destinations</h2>
-    <canvas id="travelChart"></canvas>
-</section>
+    <section class="container my-5">
+        <h2 class="text-center">Popular Travel Destinations</h2>
+        <canvas id="travelChart"></canvas>
+    </section>
 
-<section id="contact" class="container my-5">
-    <h2 class="text-center">Contact Us</h2>
-    <form>
-        <div class="mb-3">
-            <label class="form-label">Name</label>
-            <input type="text" class="form-control">
-        </div>
-        <div class="mb-3">
-            <label class="form-label">Email</label>
-            <input type="email" class="form-control">
-        </div>
-        <div class="mb-3">
-            <label class="form-label">Message</label>
-            <textarea class="form-control"></textarea>
-        </div>
-        <button class="btn btn-primary">Send</button>
-    </form>
-</section>
+    <section id="contact" class="container my-5">
+        <h2 class="text-center">Contact Us</h2>
+        <form>
+            <div class="mb-3">
+                <label class="form-label">Name</label>
+                <input type="text" class="form-control">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Email</label>
+                <input type="email" class="form-control">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Message</label>
+                <textarea class="form-control"></textarea>
+            </div>
+            <button class="btn btn-primary">Send</button>
+        </form>
+    </section>
 
-<section class="container my-5">
-    <h2 class="text-center">Our Location</h2>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2944.3405162871236!2d17.05621113058351!3d51.107197495383666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470fc30819c798a3%3A0xee6d4611c77b2f22!2sKolejka%20Polinka!5e0!3m2!1spl!2spl!4v1742927377944!5m2!1spl!2spl" class="w-100" height="400"></iframe>
-</section>
+    <section class="container my-5">
+        <h2 class="text-center">Our Location</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2944.3405162871236!2d17.05621113058351!3d51.107197495383666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470fc30819c798a3%3A0xee6d4611c77b2f22!2sKolejka%20Polinka!5e0!3m2!1spl!2spl!4v1742927377944!5m2!1spl!2spl" class="w-100" height="400"></iframe>
+    </section>
+</main>
 
 <footer class="bg-primary text-white text-center py-3">
     <p>© 2025 AWTravel - All rights reserved</p>
