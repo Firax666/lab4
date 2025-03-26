@@ -1,33 +1,3 @@
-.hero-section {
-    opacity: 0;
-    transform: translateY(-20px);
-    animation: fadeIn 1.5s ease-in-out forwards;
-}
-
-.about-section {
-    opacity: 0;
-    transform: translateY(-20px);
-    animation: fadeIn 2.0s ease-in-out forwards;
-}
-
-
-@keyframes fadeIn {
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-.btn-primary {
-    transition: background-color 0.3s ease-in-out, transform 0.2s;
-}
-
-.btn-primary:hover {
-    background-color: #0056b3;
-    transform: scale(1.05);
-}
-
-
 .card {
     transition: transform 0.3s ease-in-out;
 }
@@ -35,3 +5,70 @@
 .card:hover {
     transform: scale(1.05);
 }
+
+
+@keyframes growUp {
+    0% { transform: scaleY(0); transform-origin: bottom; }
+    100% { transform: scaleY(1); transform-origin: bottom; }
+}
+
+#travelChart {
+    animation: pulse 7s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.02); }
+    100% { transform: scale(1); }
+}
+
+#contact {
+    opacity: 0;
+    animation: slideUp 4s forwards;
+}
+
+@keyframes slideUp {
+    to { opacity: 1; transform: translateY(0); }
+}
+
+#contact:nth-child(1) { animation-delay: 0.2s; }
+#contact:nth-child(2) { animation-delay: 0.4s; }
+#contact:nth-child(3) { animation-delay: 0.6s; }
+#contact:nth-child(4) { animation-delay: 0.8s; }
+
+
+#contact .btn {
+    transition: transform 0.3s ease;
+}
+
+#contact .btn:hover {
+    animation: rotate 0.5s ease-in-out;
+}
+
+@keyframes rotate {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+
+.navbar-nav .nav-link {
+    transition: color 1s ease, transform 1s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #fff !important;
+    transform: scale(1.1);
+}
+
+blockquote, section {
+    animation: fadeUpQuote 1.5s ease-out;
+    animation-fill-mode: both; 
+}
+
+
+
+@keyframes fadeUpQuote {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
