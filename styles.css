@@ -1,0 +1,37 @@
+.hero-section {
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+.about-section {
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: fadeIn 2.0s ease-in-out forwards;
+}
+
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.btn-primary {
+    transition: background-color 0.3s ease-in-out, transform 0.2s;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+
+.card {
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
